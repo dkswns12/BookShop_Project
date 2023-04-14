@@ -1,0 +1,160 @@
+<head>
+
+</head>
+<body>
+	<h1>1.최종 주문 내역서</h1>
+	<table border=1 >
+		<tbody align=center>
+			<tr style="background: #33ff00">
+				<td>주문번호</td>
+				<td colspan='2' >주문상품명</td>
+				<td>수량</td>
+				<td>주문금액</td>
+				<td>배송비</td>
+				<td>예상적립금</td>
+				<td>주문금액합계</td>
+			</tr>
+			<tr>
+
+				<td>_order_id</td>
+				<td>
+				   <a href="http://localhost:8090/bookshop01/goods/goodsDetail.do?goods_id=_goods_id">
+					    <img width="75" alt=""  src="http://localhost:8090/bookshop01/thumbnails.do?goods_id=_goods_id&fileName=_goods_fileName">
+				   </a>
+				</td>
+				<td>
+					  <h2>
+					     <a href="http://localhost:8090/bookshop01/goods/goodsDetail.do?goods_id=_goods_id ">_goods_title</a>
+					  </h2>
+				</td>
+				<td>1개</td>
+				<td>27,000원</td>
+				<td>0원</td>
+				<td>270원</td>
+				<td>27,000원</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="clear"></div>
+	<form name="form_order">
+		<br> <br>
+		<h1>2.배송지 정보</h1>
+		<div class="detail_table">
+
+			<table>
+				<tbody>
+					<tr class="dot_line">
+						<td class="fixed_join">배송방법</td>
+						<td>
+						 일반택배
+						</td>
+					</tr>
+					<tr class="dot_line">
+						<td class="fixed_join">받으실 분</td>
+						<td>
+						  안길동
+						</td>
+					</tr>
+					<tr class="dot_line">
+						<td class="fixed_join">휴대폰번호</td>
+						<td>
+						  010-1223-3322
+						  </td>
+					</tr>
+					<tr class="dot_line">
+						<td class="fixed_join">유선전화(선택)</td>
+						<td>
+						  02-1111-4444
+						</td>
+					</tr>
+
+
+					<TR class="dot_line">
+						<TD class="fixed_join">주소</TD>
+						<td>
+						  서울 성동구 서울숲길 17 (성수동1가, 성수파크빌)
+						  </td>
+					</TR>
+					<TR class="dot_line">
+						<TD class="fixed_join">배송 메시지</TD>
+						<td>
+							문 앞에 두시면 됩니다.
+						</td>
+					</TR>
+					<TR class="dot_line">
+						<TD class="fixed_join">선물 포장</TD>
+						<td>
+						  아니오
+						</td>
+					</TR>
+				</TBODY>
+			</TABLE>
+
+		</DIV>
+		<div>
+			<br>
+			<br>
+			<h2>주문고객</h2>
+			<table>
+				<TBODY>
+					<tr class="dot_line">
+						<td><h2>이름</h2></td>
+						<td>
+						  <input type="text" value="안길동" size="15" disabled />
+						</td>
+					</tr>
+					<tr class="dot_line">
+						<td><h2>핸드폰</h2></td>
+						<td>
+						  <input type="text" value="010-1223-3322" size="15" disabled />
+						</td>
+					</tr>
+					<tr class="dot_line">
+						<td><h2>이메일</h2></td>
+						<td>
+						  <input type="text" value="dkswns15@naver.com" size="15" disabled />
+						 </td>
+					</tr>
+				</TBODY>
+			</table>
+		</div>
+		<DIV class="clear"></DIV>
+		<br> <br> <br>
+		<H1>3.결제정보</H1>
+		<DIV class="detail_table">
+			<table>
+				<TBODY>
+					<TR class="dot_line">
+						<TD class="fixed_join">결제방법</TD>
+						<TD>
+							신용카드
+							카드사:삼성
+							할부개월수:일시불
+						</TD>
+					</TR>
+					<TR class="dot_line">
+						<TD class="fixed_join">결제카드</TD>
+						<TD>
+						  삼성
+						  </TD>
+					</TR>
+					<TR class="dot_line">
+						<TD class="fixed_join">할부기간</TD>
+						<TD>
+						  일시불
+						 </TD>
+					</TR>
+				</TBODY>
+			</table>
+		</DIV>
+	</form>
+	<DIV class="clear"></DIV>
+	<br>
+	<br>
+	<br>
+	<center>
+		<br> <br> <a href="${contextPath}/main/main.do"> <IMG width="75" alt="" src="${contextPath}/resources/image/btn_shoping_continue.jpg">
+		</a>
+		<DIV class="clear"></DIV>
+</center>		
+</body>
